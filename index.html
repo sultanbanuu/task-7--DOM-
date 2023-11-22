@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="slider container">
+        <div class="slidershow">
+          <div style="margin: auto 0">
+            <a class="prev" onclick="plusSlides(-1) " 
+              >❮</a
+            >
+          </div>
+          <div style="display: flex; flex-direction: column; width: 50%">
+            <div class="mySlides">
+              <img src="assets/image/pic1.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides">
+              <img src="assets/image/pic2.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides">
+              <img src="assets/image/pic3.jpg" style="width: 100%" />
+            </div>
+            <div>
+              <div class="row">
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="assets/image/pic1.jpg"
+                    style="width: 100%"
+                    onclick="currentSlide(1)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="assets/image/pic2.jpg"
+                    style="width: 100%"
+                    onclick="currentSlide(2)"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="demo cursor"
+                    src="assets/image/pic3.jpg"
+                    style="width: 100%"
+                    onclick="currentSlide(3)"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin: auto 0">
+            <a class="next" onclick="plusSlides(-1)" 
+              >❯</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a> -->
+
+      <div class="container">
+        <div class="accordion">
+          <button class="accordionBtn accordion-txt" id="accordion-menu">
+            Декоративные вставки в аэродинамические обвесы<span
+              class="open"
+            ></span>
+          </button>
+          <div class="accordion-text display-none">
+            <p>
+              Sed amet amet dui tortor egestas nisl. Nibh maecenas enim
+              volutpat, id sed aliquam in nullam quam. Ut viverra ut at dolor
+              blandit consequat arcu. Dolor nisl a egestas consequat amet.
+              Tempor sed sit non volutpat id. Eget lobortis magna enim ornare
+              condimentum integer orci. Sed integer volutpat consectetur eu,
+              mauris. Nisi mattis tincidunt habitasse mi, arcu vulputate urna
+              at. Condimentum viverra consequat felis in morbi. Nisi et cras
+              nisl vel. Suspendisse quisque purus tellus mus sit massa pretium
+              nunc sed. Arcu ac nulla libero, blandit urna. Est volutpat
+              facilisis lacus ullamcorper. Velit, adipiscing nibh vehicula
+              elementum lectus dui. Sit aliquam aliquam maecenas integer massa
+              sem. Sed purus elementum tincidunt non vel.
+            </p>
+          </div>
+          <button class="accordionBtn accordion-txt" id="accordion-menu">
+            Декоративные вставки в аэродинамические обвесы<span
+              class="open"
+            ></span>
+          </button>
+          <div class="accordion-text display-none">
+            <p>
+              Sed amet amet dui tortor egestas nisl. Nibh maecenas enim
+              volutpat, id sed aliquam in nullam quam. Ut viverra ut at dolor
+              blandit consequat arcu. Dolor nisl a egestas consequat amet.
+              Tempor sed sit non volutpat id. Eget lobortis magna enim ornare
+              condimentum integer orci. Sed integer volutpat consectetur eu,
+              mauris. Nisi mattis tincidunt habitasse mi, arcu vulputate urna
+              at. Condimentum viverra consequat felis in morbi. Nisi et cras
+              nisl vel. Suspendisse quisque purus tellus mus sit massa pretium
+              nunc sed. Arcu ac nulla libero, blandit urna. Est volutpat
+              facilisis lacus ullamcorper. Velit, adipiscing nibh vehicula
+              elementum lectus dui. Sit aliquam aliquam maecenas integer massa
+              sem. Sed purus elementum tincidunt non vel.
+            </p>
+          </div>
+          <button class="accordionBtn accordion-txt" id="accordion-menu">
+            Декоративные вставки в аэродинамические обвесы<span
+              class="open"
+            ></span>
+          </button>
+          <div class="accordion-text display-none">
+            <p>
+              Sed amet amet dui tortor egestas nisl. Nibh maecenas enim
+              volutpat, id sed aliquam in nullam quam. Ut viverra ut at dolor
+              blandit consequat arcu. Dolor nisl a egestas consequat amet.
+              Tempor sed sit non volutpat id. Eget lobortis magna enim ornare
+              condimentum integer orci. Sed integer volutpat consectetur eu,
+              mauris. Nisi mattis tincidunt habitasse mi, arcu vulputate urna
+              at. Condimentum viverra consequat felis in morbi. Nisi et cras
+              nisl vel. Suspendisse quisque purus tellus mus sit massa pretium
+              nunc sed. Arcu ac nulla libero, blandit urna. Est volutpat
+              facilisis lacus ullamcorper. Velit, adipiscing nibh vehicula
+              elementum lectus dui. Sit aliquam aliquam maecenas integer massa
+              sem. Sed purus elementum tincidunt non vel.
+            </p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div>
+            <button class="drpdwn-btn" id="dropdownBtn" onclick="toggleList()">
+              <span>Option 1</span>
+              <div class="drpdwn-icon">
+                <img src="assets/image/arrow.png" alt="" />
+              </div>
+            </button>
+          </div>
+
+          <ul id="dropdownList" class="drpdwn-list">
+            <li class="option"><a>Option 1</a></li>
+            <li class="option"><a>Option 2</a></li>
+            <li class="option"><a>Option 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
